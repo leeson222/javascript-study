@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('run browser script');
+
+         // literal
+        const str = 'string';
+        const num = '123';
+        const bool = 'true';
+        const nul = 'null';
+        const un = 'undefined';
+        const sym = Symbol('symbol');
+
+        const obj = {};
+        const arr = [];
+
+        // 원시타입
+        //변수에 할당된 값 그대로 메모리에 저장됨
+
+        //원시타입 값의 복사
+        let str2 = str; // 'string'
+        sttr2 = 'string2';
+        
+        // str: 'string'
+        // str2: 'string2'
+
+        // 객체 타입 값의 복사
+        const obj2 = obj;
+        obj2.a = 10;
+
+        // obj.a: 없다
+        // obj2.a: 10
+
+        console.log("obj",obj);
+        console.log("obj2",obj2);
+    </script>
+</body>
+</html>
