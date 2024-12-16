@@ -88,3 +88,70 @@ console.log(luna);
 // 배열의 얕은 복사
 
 // !!숙제!! 중첩 객체를 좀 더 복잡하게 설계해서 내부의 값을 얕은 복사로 서로 분리시켜 보기
+
+// 사람
+
+const judy = {
+  name: "judy",
+  gender: "female",
+  hair: {
+    color: {
+      topOfHead: "black",
+      tipOfHead: "brown",
+    },
+    length: "long",
+  },
+  eyes: {
+    color: {
+      pupil: "black",
+      iris: "brown",
+    },
+    doubleEyelid: "yes",
+    eyelashes: "long",
+  },
+};
+
+const lucy = {
+  ...judy,
+  name: "lucy",
+  hair: {
+    ...judy.hair,
+    color: {
+      ...judy.hair.color,
+      middle: "yellow",
+    },
+  },
+  eyes: {
+    ...judy.eyes,
+    color: {
+      ...judy.eyes.color,
+    },
+  },
+};
+
+const cherry = {
+  ...lucy,
+  name: "cherry",
+  hair: {
+    ...lucy.hair,
+    color: {
+      ...lucy.hair.color,
+    },
+  },
+  eyes: {
+    ...lucy.eyes,
+    color: {
+      ...lucy.eyes.color,
+      shadow: "pink",
+    },
+  },
+};
+
+lucy.hair.color.topOfHead = "red";
+lucy.eyes.color.pupil = "brown";
+
+cherry.hair.color.middle = "khaki";
+
+console.log(judy);
+console.log(lucy);
+console.log(cherry);
