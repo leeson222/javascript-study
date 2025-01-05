@@ -80,3 +80,27 @@ c = 0;
 let d = c++;
 console.log(d);
 console.log(c);
+
+// 비교 연산자 (relational operators)
+// > 크다
+// < 작다
+// >= 크거나 같다
+// <= 작거나 같다
+console.log(2 > 3);
+console.log(2 < 3);
+console.log(3 < 2);
+console.log(3 < 2);
+
+// 동등 비교 연산자
+// == 값이 같음
+// != 값이 다름
+// === 값과 타입이 둘 다 같음
+// !== 값과 타입이 둘 다 다름
+console.log(2 == 2);
+console.log(2 != 2);
+console.log(2 != 3);
+console.log(2 == 3);
+console.log(2 == "2");
+console.log(2 === "2");
+console.log(true == 1);
+console.log(true === 1);
