@@ -24,3 +24,4 @@ console.log(false || true);
 console.log(false || false);
 
 console.log(!"text");
+console.log(!"text2");
